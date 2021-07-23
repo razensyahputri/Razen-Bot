@@ -1,0 +1,7 @@
+{
+  "name": "razen-bot",
+  "description": "Create Razen Bot",
+  "repository": "https://github.com/HyroKidsSmp/Razen-Bot",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["bot", "whatsapp", "whatsapp-bot"]
+}
