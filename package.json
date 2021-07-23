@@ -1,0 +1,70 @@
+{
+  "name": "razen-bot",
+  "version": "1.0.0",
+  "description": "Razen Bot ~~~",
+  "depecrated": false,
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "src": "src",
+    "plugins": "plugins"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "termux-whatsapp-bot",
+    "whatsapp-bot",
+    "whatsapp",
+    "js-whatsapp"
+  ],
+  "homepage": "https://github.com/Nurutomo/wabot-aq",
+  "author": {
+    "name": "Razen Syahputra"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nurutomo/wabot-aq.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nurutomo/wabot-aq/issues"
+  },
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@adiwajshing/baileys": "^3.5.1",
+    "acorn": "^8.4.1",
+    "awesome-phonenumber": "^2.47.0",
+    "axios": "^0.21.1",
+    "brainly-scraper-v2": "^1.1.2",
+    "cfonts": "^2.9.3",
+    "chalk": "^4.1.1",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1",
+    "ffmpeg": "0.0.4",
+    "file-type": "^16.3.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "form-data": "^3.0.1",
+    "g-i-s": "^2.1.6",
+    "google-it": "^1.6.2",
+    "human-readable": "^0.2.1",
+    "jsdom": "^16.5.1",
+    "lowdb": "^2.1.0",
+    "node-fetch": "^2.6.1",
+    "node-gtts": "^2.0.2",
+    "node-webpmux": "^2.0.3",
+    "qrcode": "^1.4.4",
+    "qrcode-terminal": "^0.12.0",
+    "similarity": "^1.2.1",
+    "socket.io": "^4.0.1",
+    "socket.io-client": "^2.2.0",
+    "steno": "^2.0.0",
+    "syntax-error": "^1.4.0",
+    "terminal-image": "^1.2.1",
+    "translate-google-api": "^1.0.4",
+    "url-regex": "^5.0.0",
+    "xmldom": "^0.5.0",
+    "yargs": "^16.2.0",
+    "yt-search": "^2.9.0"
+  }
+}
