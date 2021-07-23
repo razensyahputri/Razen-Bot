@@ -1,18 +1,17 @@
-# wabot-aq
-
-Simple WhatsApp Bot
-
-## FOR TERMUX USER
+# Razen-Bot
+----------
+Fork dari wabot-aq & babybot
+----------
+## FOR TERMUX & SSH USER
 
 ```bash
-> pkg update && pkg upgrade
-> pkg install git -y
-> pkg install nodejs -y
-> pkg install ffmpeg -y
-> pkg install imagemagick -y
-> git clone https://github.com/Nurutomo/wabot-aq
-> cd wabot-aq
-> npm install
+> apt update && pkg upgrade
+> apt install git -y
+> apt install nodejs -y
+> apt install ffmpeg -y
+> apt install imagemagick -y
+> git clone https://github.com/HyroKidsSmp/Razen-Bot
+> cd Razen-Bot
 ```
 
 ---------
