@@ -18,8 +18,8 @@ let handler = async (m, { conn, text}) => {
     headerType: 4,
 }
 
-conn.reply(m.chat, ${K}, MessageType.buttonsMessage, { 
-caption: RazenBot, 
+conn.reply(m.chat, K, MessageType.buttonsMessage, { 
+caption: 'RazenBot', 
 footerText: `Undefined`,
 "contextInfo": {
             text: 'Halo',
