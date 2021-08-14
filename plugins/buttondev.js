@@ -13,6 +13,7 @@ let handler = async (m, { conn, text}) => {
 ]
   const K = {
     contentText: `Halo @${who.split('@')[0]} bla bla bla`,
+    footerText: `Razen Bot`, 
     buttons: buttons,
     headerType: 4,
 }
