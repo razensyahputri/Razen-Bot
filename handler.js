@@ -40,6 +40,8 @@ module.exports = {
             if (!isNumber(user.age)) user.age = -1
             if (!isNumber(user.regTime)) user.regTime = -1
           }
+          if (!isNumber(user.level)) user.level = 0
+          if (! isNumber(user.hoki)) user.hoki = 1
           if (!isNumber(user.afk)) user.afk = -1
           if (!('afkReason' in user)) user.afkReason = ''
           if (!('banned' in user)) user.banned = false
@@ -56,6 +58,8 @@ module.exports = {
           limit: 10,
           money: 1000,
           spin: 10,
+          hoki: 1,
+          level: 0,
           maxspin: 0,
           lastclaim: 0,
           registered: false,
@@ -73,6 +77,42 @@ module.exports = {
           rank: '', 
           autolevelup: true,
         }
+        
+        let invmenu = global.db.data.invmenu[m.sender] 
+        if (typeof invmenu !== 'object') global.db.data.invmenu[m.sender] = {}
+        if (invmenu) {
+        	if(!isNumber(invmenu.xpfish)) invmenu.xpfish = 0
+            if(!isNumber(invmenu.moneyfish)) invmenu.moneyfish = 0
+        	if (!invmenu.normal) invmenu.normal = []
+            if (!invmenu.rare) invmenu.rare = []
+            if (!invmenu.legend) invmenu.legend = []
+            if (!invmenu.mythic) invmenu.mythic = []
+            if (!invmenu.rod) invmenu.rod = ['kayu']
+            if (!isNumber(invmenu.levelbot)) invmenu.levelbot = 0
+            if(!isNumber(invmenu.durability)) invmenu.durability = 100
+            if(!isNumber(invmenu.salmon)) invmenu.salmon = 0
+            if(!isNumber(invmenu.cod)) invmenu.cod = 0
+            if(!isNumber(invmenu.sampah)) invmenu.sampah = 0
+            if(!isNumber(invmenu.golden)) invmenu.golden = 0
+            if(!isNumber(invmenu.tropical)) invmenu.tropical = 0
+            if (!invmenu.hancur) invmenu.hancur = false
+            } else global.db.data.invmenu[m.sender] = {
+            	xpfish: 0,
+                moneyfish: 0,
+                salmon: 0,
+                cod: 0,
+                tropical: 0,
+                golden: 0,
+                sampah: 0,
+                normal: [], 
+                rare: [], 
+                legend: [], 
+                mythic: [], 
+                levelbot: 0,
+                rod: ['kayu'], 
+                durability: 100,
+                hancur: false
+                }
 
         let chat = global.db.data.chats[m.chat]
         if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
