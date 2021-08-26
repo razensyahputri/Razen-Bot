@@ -2,7 +2,7 @@ let { MessageType } = require('@adiwajshing/baileys')
 function pickRandom(list) {
   return list[Math.floor(Math.random() * list.length)]
 }
-let handler = async (m, { conn, text }) => {
+let handler = async (m, { conn, text, usedPrefix}) => {
 	let hoki1 = pickRandom(['1', '2', '3']) 
 	let na = 1 * hoki1
 	let sa = 26
