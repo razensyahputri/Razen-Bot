@@ -100,6 +100,7 @@ if (opts['test']) {
       stats: {},
       msgs: {},
       sticker: {},
+      invmenu: {}, 
       ...(global.db.data || {})
     }
     global.db.chain = _.chain(global.db.data)
