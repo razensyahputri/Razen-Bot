@@ -38,7 +38,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
   if (text == 'sampah all') {
     jumlah = tzy.sampah
     let anja = jumlah * harsam
-    tzy.sampah -= anja
+    tzy.sampah -= jumlah
     tzy.moneyfish += anja
     conn.reply(m.chat, `Berhasil menjual ${jumlah} sampah`) 
     
