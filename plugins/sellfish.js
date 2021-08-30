@@ -1,12 +1,13 @@
 let { MessageType } = require('@adiwajshing/baileys')
 function pickRandom(list) {
   return list[Math.floor(Math.random() * list.length)]
+}
 let harsam = 100
 let harsal = 500
 let harcod = 1250
 let hartro = 3000
 let hargol = 7000
-}
+
 let handler = async (m, { conn, text, usedPrefix}) => { 
     let jumlah = parseInt(text)
     if (!jumlah) {
