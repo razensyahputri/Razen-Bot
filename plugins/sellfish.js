@@ -30,14 +30,32 @@ let handler = async (m, { conn, text, usedPrefix}) => {
     if (tzy.sampah < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
     if (tzy.sampah > jumlah) {
     let anja = jumlah * harsam
+    tzy.sampah -= jumlah
+    tzy.moneyfish += anja
+    conn.reply(m.chat, `Berhasil menjual ${jumlah} sampah`) 
+    }
+  }
+  if (text == 'sampah all') {
+    jumlah = tzy.sampah
+    let anja = jumlah * harsam
+    tzy.sampah -= anja
     tzy.moneyfish += anja
     conn.reply(m.chat, `Berhasil menjual ${jumlah} sampah`) 
     }
   }
   if (text == 'cod') {
-    if (tzy.salcod < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
-    if (tzy.salcod > jumlah) { 
+    if (tzy.cod < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
+    if (tzy.cod > jumlah) { 
     let anja = jumlah * harcod
+    tzy.cod -= jumlah
+    tzy.moneyfish += anja
+    conn.reply(m.chat, `Berhasil menjual ${jumlah} cod`) 
+    }
+  }
+  if (text == 'cod all') {
+    jumlah = tzy.cod
+    let anja = jumlah * harcod
+    tzy.cod -= jumlah
     tzy.moneyfish += anja
     conn.reply(m.chat, `Berhasil menjual ${jumlah} cod`) 
     }
@@ -46,6 +64,15 @@ let handler = async (m, { conn, text, usedPrefix}) => {
     if (tzy.salmon < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
     if (tzy.salmon > jumlah) { 
     let anja = jumlah * harsal
+    tzy.salmon -= jumlah
+    tzy.moneyfish += anja
+    conn.reply(m.chat, `Berhasil menjual ${jumlah} salmon`) 
+    }
+  }
+  if (text == 'salmon all') {
+    jumlah = tzy.salmon
+    let anja = jumlah * harsal
+    tzy.salmon -= jumlah
     tzy.moneyfish += anja
     conn.reply(m.chat, `Berhasil menjual ${jumlah} salmon`) 
     }
@@ -54,8 +81,17 @@ let handler = async (m, { conn, text, usedPrefix}) => {
     if (tzy.tropical < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
     if (tzy.tropical > jumlah) { 
     let anja = jumlah * hartro
+    tzy.tropical -= jumlah
     tzy.moneyfish += anja
     conn.reply(m.chat, `Berhasil menjual ${jumlah} tropical fish`) 
+    }
+  }
+  if (text == 'tropical all') {
+    jumlah = tzy.tropical
+    let anja = jumlah * harsam
+    tzy.tropical -= jumlah
+    tzy.moneyfish += anja
+    conn.reply(m.chat, `Berhasil menjual ${jumlah} tropical`) 
     }
   }
    
