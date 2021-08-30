@@ -24,7 +24,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
 - sell tropical
   - 3000
 - sell gold
-  - 7000
+  - 7000`
   if (text == 'sampah') {
     if (tzy.sampah < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
     if (tzy.sampah > jumlah) {
