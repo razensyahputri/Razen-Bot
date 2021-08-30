@@ -27,7 +27,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
                if (invu.moneyfish > kays) 
                {
                conn.reply(m.chat, `Berhasil membeli pancingan kayu`) 
-               invu.rod = kayu
+               invu.rod = 'kayu'
                invu.moneyfish -= kays
                invu.durability += 100
                }
@@ -36,7 +36,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
            if (invu.moneyfish < bats) throw 'Uang lu gk ada ego'
            if (invu.moneyfish > bats) {
                conn.reply(m.chat, `Berhasil membeli pancingan batu`) 
-               invu.rod = batu
+               invu.rod = 'batu'
                invu.moneyfish -= bats
                invu.durabilty += 150
                }
