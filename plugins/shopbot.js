@@ -6,7 +6,7 @@ let kays = 5000
 let handler = async (m, { conn, text, usedPrefix}) => {
 	let user = global.db.data.users[m.sender]
         let invu = global.db.data.invmenu[m.sender]
-        if (!text) throw 'Tipe:
+        if (!text) throw `Tipe:
 - rod
   - kayu
     - 5000
@@ -18,7 +18,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
 - bait
 - boat
 - hoki
-- premium '
+- premium`
        if (text == 'rod') {
            if (!text) throw 'pancingan apa ego'
            if (text == 'kayu') {
@@ -31,6 +31,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
                }
           }
       }
+  }
 
 handler.help = ['shop']
 handler.tags = ['main']
