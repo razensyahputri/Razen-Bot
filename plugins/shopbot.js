@@ -3,6 +3,7 @@ function pickRandom(list) {
   return list[Math.floor(Math.random() * list.length)]
 }
 let kays = 5000
+let bats = 20000
 let handler = async (m, { conn, text, usedPrefix}) => {
 	let user = global.db.data.users[m.sender]
         let invu = global.db.data.invmenu[m.sender]
@@ -11,7 +12,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
   - kayu
     - 5000
   - batu
-    - 15000
+    - 20000
   - besi
     - 50000
   - coming soon
@@ -19,17 +20,28 @@ let handler = async (m, { conn, text, usedPrefix}) => {
 - boat
 - hoki
 - premium`
-       if (text == 'rod') {
-           if (!text) throw 'pancingan apa ego'
-           if (text == 'kayu') {
-               if (invu.money < kays) throw 'Uang kurang'
-               if (invu.money > kays) {
+       if (text == 'rod') throw 'pancingan apa ego'
+       if (text == 'rod kayu) 
+         {
+               if (invu.moneyfish < kays) throw 'Uang kurang'
+               if (invu.moneyfish > kays) 
+               {
                conn.reply(m.chat, `Berhasil membeli pancingan kayu`) 
                invu.rod = kayu
-               invu.money -= kays
+               invu.moneyfish -= kays
                invu.durability += 100
                }
           }
+       if (text == 'rod batu') {
+           if (invu.moneyfish < bats) throw 'Uang lu gk ada ego'
+           if (invu.moneyfish > bats) {
+               conn.reply(m.chat, `Berhasil membeli pancingan batu`) 
+               invu.rod = batu
+               invu.moneyfish -= bats
+               invu.durabilty += 150
+               }
+            }
+       
       }
   }
 
