@@ -41,7 +41,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
     tzy.sampah -= anja
     tzy.moneyfish += anja
     conn.reply(m.chat, `Berhasil menjual ${jumlah} sampah`) 
-    }
+    
   }
   if (text == 'cod') {
     if (tzy.cod < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
@@ -58,7 +58,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
     tzy.cod -= jumlah
     tzy.moneyfish += anja
     conn.reply(m.chat, `Berhasil menjual ${jumlah} cod`) 
-    }
+    
   }
   if (text == 'salmon') {
     if (tzy.salmon < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
@@ -75,7 +75,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
     tzy.salmon -= jumlah
     tzy.moneyfish += anja
     conn.reply(m.chat, `Berhasil menjual ${jumlah} salmon`) 
-    }
+    
   }
   if (text == 'tropical') {
     if (tzy.tropical < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
@@ -92,7 +92,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
     tzy.tropical -= jumlah
     tzy.moneyfish += anja
     conn.reply(m.chat, `Berhasil menjual ${jumlah} tropical`) 
-    }
+    
   }
    
 }
