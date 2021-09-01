@@ -100,7 +100,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
     let anja = jumlah * hargol
     tzy.gold -= jumlah
     tzy.moneyfish += anja
-    conn.reply(m.chat, `Berhasil menjual ${jumlah} tropical fish`) 
+    conn.reply(m.chat, `Berhasil menjual ${jumlah} gold fish`) 
     }
   }
   if (text == 'gold all') {
@@ -108,7 +108,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
     let anja = jumlah * hargol
     tzy.gold -= jumlah
     tzy.moneyfish += anja
-    conn.reply(m.chat, `Berhasil menjual ${jumlah} tropical`) 
+    conn.reply(m.chat, `Berhasil menjual ${jumlah} gold`) 
         
  }
    
