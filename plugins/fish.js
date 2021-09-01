@@ -62,7 +62,12 @@ let handler = async (m, { conn, text, usedPrefix}) => {
       mancing.durability -= dur
       mancing.xpfish += anj
       }
+      else if (hasil === "puffer") {
+      mancing.puffer += na
+      mancing.durability -= dur
+      mancing.xpfish += anj
       conn.reply(m.chat, `Berhasil Memancing
+      }
 Kamu mendapatkan ðŸŽ£ ${na} ${hasil} dan mendapatkan + ${anj} xpfish dan durability fishing rod mu -${dur}`) 
       }
       } 
