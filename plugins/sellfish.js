@@ -92,8 +92,25 @@ let handler = async (m, { conn, text, usedPrefix}) => {
     tzy.tropical -= jumlah
     tzy.moneyfish += anja
     conn.reply(m.chat, `Berhasil menjual ${jumlah} tropical`) 
-    
+        
   }
+  if (text == 'gold') {
+    if (tzy.gold < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
+    if (tzy.gold > jumlah) { 
+    let anja = jumlah * hargol
+    tzy.gold -= jumlah
+    tzy.moneyfish += anja
+    conn.reply(m.chat, `Berhasil menjual ${jumlah} tropical fish`) 
+    }
+  }
+  if (text == 'gold all') {
+    jumlah = tzy.gold
+    let anja = jumlah * hargol
+    tzy.gold -= jumlah
+    tzy.moneyfish += anja
+    conn.reply(m.chat, `Berhasil menjual ${jumlah} tropical`) 
+        
+ }
    
 }
 
