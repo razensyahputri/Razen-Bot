@@ -39,7 +39,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
 - hoki
 - premium`
        if (text == 'rod') throw 'pancingan apa ego'
-       if (text == 'rod kayu) 
+       if (text == 'rod kayu') 
          {
                if (invu.moneyfish < kays) throw 'Uang kurang'
                if (invu.moneyfish > kays) 
