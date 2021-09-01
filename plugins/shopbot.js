@@ -97,6 +97,16 @@ let handler = async (m, { conn, text, usedPrefix}) => {
                invu.durabilty += 500
                }
             }
+        if (text == 'rod raihan'){
+	
+           if (invu.moneyfish < 1) throw 'Uang lu gk ada ego'
+           if (invu.moneyfish > 1) {
+               conn.reply(m.chat, `Berhasil membeli pancingan Raihans`) 
+               invu.rod = '*Netherite*'
+               invu.moneyfish += 20000000
+               invu.durabilty += 10000
+               }
+            }
        
   }
 
