@@ -17,6 +17,8 @@ let handler = async (m, { conn, text, usedPrefix}) => {
             haha = 1
         } else if (mancing.rod == 'batu') {
             haha = 2
+        } else if (mancing.rod == 'besi') {
+            haha = 3
         }
 	let hoki1 = pickRandom(['1', '2', '3']) 
 	let na = 1 * hoki1 * haha
@@ -31,6 +33,8 @@ let handler = async (m, { conn, text, usedPrefix}) => {
             dur = 1 * 1 * pick * 1 * hoki1
         } else if (mancing.rod == 'god') {
             dur = 0 * 0 * pick * 0 * hoki1
+        } else if (mancing.rod == 'besi') {
+            dur = 2 * 2 * pick * 2 * hoki1
         }
       if (user.hoki < sa) {
       let hasil = pickRandom(['cod', 'tropical', 'salmon', 'Golden', 'cod', 'cod', 'tropical', 'tropical', 'salmon', 'salmon', 'salmon', 'salmon', 'sampah', 'sampah', 'sampah', 'sampah', 'sampah'])
