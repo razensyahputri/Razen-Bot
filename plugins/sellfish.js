@@ -24,7 +24,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
   - 1250
 - sell tropical
   - 3000
-- sell gold
+- sell golden
   - 7000`
   if (text == 'sampah') {
     if (tzy.sampah < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
@@ -94,21 +94,21 @@ let handler = async (m, { conn, text, usedPrefix}) => {
     conn.reply(m.chat, `Berhasil menjual ${jumlah} tropical`) 
         
   }
-  if (text == 'gold') {
-    if (tzy.gold < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
-    if (tzy.gold > jumlah) { 
+  if (text == 'golden') {
+    if (tzy.golden < jumlah) throw 'Yang kamu miliki tidak sama dengan yang kamu impikan'
+    if (tzy.golden > jumlah) { 
     let anja = jumlah * hargol
-    tzy.gold -= jumlah
+    tzy.golden -= jumlah
     tzy.moneyfish += anja
-    conn.reply(m.chat, `Berhasil menjual ${jumlah} gold fish`) 
+    conn.reply(m.chat, `Berhasil menjual ${jumlah} golden fish`) 
     }
   }
-  if (text == 'gold all') {
-    jumlah = tzy.gold
+  if (text == 'golden all') {
+    jumlah = tzy.golden
     let anja = jumlah * hargol
-    tzy.gold -= jumlah
+    tzy.golden -= jumlah
     tzy.moneyfish += anja
-    conn.reply(m.chat, `Berhasil menjual ${jumlah} gold`) 
+    conn.reply(m.chat, `Berhasil menjual ${jumlah} golden fish`) 
         
  }
    
