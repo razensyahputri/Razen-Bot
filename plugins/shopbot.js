@@ -4,6 +4,7 @@ function pickRandom(list) {
 }
 let kays = 5000
 let bats = 20000
+let bass = 50000
 let handler = async (m, { conn, text, usedPrefix}) => {
 	let user = global.db.data.users[m.sender]
         let invu = global.db.data.invmenu[m.sender]
@@ -41,7 +42,15 @@ let handler = async (m, { conn, text, usedPrefix}) => {
                invu.durabilty += 150
                }
             }
-       
+       if (text == 'rod besi') {
+           if (invu.moneyfish < bass) throw 'Uang lu gk ada ego'
+           if (invu.moneyfish > bass) {
+               conn.reply(m.chat, `Berhasil membeli pancingan besi`) 
+               invu.rod = 'besi'
+               invu.moneyfish -= bass
+               invu.durabilty += 200
+               }
+            }
       }
   }
 
