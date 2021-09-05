@@ -76,6 +76,12 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
    if (teks == 'money') tags = {
     'money': 'Money'
   }
+  if (teks == 'fish') tags = {
+    'fish': 'Fish'
+}
+  if (teks == 'pokemon') tags = {
+    'pokemon': 'Pokemon'
+}
   if (teks == 'sticker') tags = {
     'sticker': 'Stiker'
   }
