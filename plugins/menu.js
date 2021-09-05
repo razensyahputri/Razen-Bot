@@ -25,7 +25,7 @@ ${'```%npmdesc```'}
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'daftar', 'main', 'game', 'xp', 'money', 'fish', 'pokemon', 'sticker', 'kerang', 'quotes', 'admin', 'group', 'islami', 'premium', 'internet', 'nulis', 'downloader', 'tools', 'fun', 'database', 'jadibot', 'owner', 'host', 'advanced', 'info', 'vicstore', '-----/n\----- , 'vpso', 'vpsg', 'provider', 'vcc', 'payment']
+  let arrayMenu = ['all', 'daftar', 'main', 'game', 'xp', 'money', 'fish', 'pokemon', 'sticker', 'kerang', 'quotes', 'admin', 'group', 'islami', 'premium', 'internet', 'nulis', 'downloader', 'tools', 'fun', 'database', 'jadibot', 'owner', 'host', 'advanced', 'info', 'vicstore', '-----/n\-----' , 'vpso', 'vpsg', 'provider', 'vcc', 'payment']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
       'Daftar': 'Daftar', 
