@@ -136,7 +136,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'info') tags = {
     'info': 'Info'
   }
-  if (teks == 'vicstore) tags = {
+  if (teks == 'vicstore') tags = {
      'vicstore': 'Victrius Store'
      }
  if (teks == '-----/n\-----') tags = {
