@@ -69,6 +69,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
       mancing.xpfish += anj
       conn.reply(m.chat, `Berhasil Memancing Kamu mendapatkan ðŸŽ£ ${na} ${hasil} dan mendapatkan + ${anj} xpfish dan durability fishing rod mu -${dur}`) 
       }
+      }
       } 
       }
 
