@@ -26,19 +26,20 @@ let handler = async (m, { conn, text, usedPrefix}) => {
 	let anj = su * hoki1
 	let sa = 26
         let dur
-        let pick = pickRandom(['0', '0.1', '0.2', '0.25', '0.3', '0.4', '0.5', '0.6', '0.7', '0.75', '0.8', '0.9', '1']) 
+        let pick = pickRandom(['0', '0.25', '0.5', '0.75', '1']) 
         if (mancing.rod == 'kayu') {
             dur = 1 * 1 * pick * 1 * hoki1
         } else if (mancing.rod == 'batu') {
-            dur = 1 * 1 * pick * 1 * hoki1
+            dur = 0.75 * 0.75 * pick * 0.75 * hoki1
         } else if (mancing.rod == 'god') {
             dur = 0 * 0 * pick * 0 * hoki1
         } else if (mancing.rod == 'besi') {
-            dur = 2 * 2 * pick * 2 * hoki1
+            dur = 0.5 * 0.5 * pick * 1 * hoki1
         }
       if (user.hoki < sa) {
       let hasil = pickRandom(['cod', 'tropical', 'salmon', 'Golden', 'cod', 'cod', 'tropical', 'tropical', 'salmon', 'salmon', 'salmon', 'salmon', 'sampah', 'sampah', 'sampah', 'sampah', 'sampah'])
-      if (hasil === "sampah") {
+      if (hasil === "sampah")
+      {
       mancing.sampah += na
       mancing.durability -= dur
       mancing.xpfish += anj 
@@ -66,9 +67,7 @@ let handler = async (m, { conn, text, usedPrefix}) => {
       mancing.puffer += na
       mancing.durability -= dur
       mancing.xpfish += anj
-      conn.reply(m.chat, `Berhasil Memancing
-      }
-Kamu mendapatkan ðŸŽ£ ${na} ${hasil} dan mendapatkan + ${anj} xpfish dan durability fishing rod mu -${dur}`) 
+      conn.reply(m.chat, `Berhasil Memancing Kamu mendapatkan ðŸŽ£ ${na} ${hasil} dan mendapatkan + ${anj} xpfish dan durability fishing rod mu -${dur}`) 
       }
       } 
       }
