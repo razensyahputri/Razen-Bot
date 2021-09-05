@@ -146,7 +146,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
    'vpso': 'Vps  - Rdp OVH'
    }
    if (teks == 'vpsg') tags = {
-      vpsg': 'Vps - Rdp Gcp'
+      'vpsg': 'Vps - Rdp Gcp'
       }
    if (teks == 'provider') tags = {
       'provider': 'Provider'
